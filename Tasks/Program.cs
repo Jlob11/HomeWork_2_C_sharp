@@ -19,9 +19,20 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-int number = new Random().Next(100, 1000000);
-int number = int.Parse(Console.ReadLine());
-if(number > 99)
+int number = new Random().Next(1, 1000000);
+if (number < 100)
+	Console.WriteLine("третьей цифры нет");
+else
 {
-    Console​.​WriteLine​(​(​n / 100) % 10);
+    Console.WriteLine(number);
+    while(number >= 1000)
+    {
+        number = number / 10;
+    }
+    
+    Console.WriteLine(number % 10);
 }
+
+        
+
+
