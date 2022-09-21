@@ -19,20 +19,32 @@
 // 78 -> третьей цифры нет
 // 32679 -> 6
 
-int number = new Random().Next(1, 1000000);
-if (number < 100)
-	Console.WriteLine("третьей цифры нет");
-else
-{
-    Console.WriteLine(number);
-    while(number >= 1000)
-    {
-        number = number / 10;
-    }
+// int number = new Random().Next(1, 1000000);
+// if (number < 100)
+// 	Console.WriteLine("третьей цифры нет");
+// else
+// {
+//     Console.WriteLine(number);
+//     while(number >= 1000)
+//     {
+//         number = number / 10;
+//     }
     
-    Console.WriteLine(number % 10);
+//     Console.WriteLine(number % 10);
+// }
+
+// Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
+
+// 6 -> да
+// 7 -> да
+// 1 -> нет
+
+int number = new Random().Next(1,8);
+if (number == 6) || (number == 7)
+{
+    Console.WriteLine("да");
 }
-
-        
-
-
+else 
+{
+   Console.WriteLine("нет"); 
+}
