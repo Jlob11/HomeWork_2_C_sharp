@@ -39,12 +39,14 @@
 // 7 -> да
 // 1 -> нет
 
-int number = new Random().Next(1,8);
-if (number == 6) || (number == 7)
+int day = new Random().Next(1,8);
+if ((day == 6) || (day == 7))
 {
+    Console.WriteLine(day);
     Console.WriteLine("да");
 }
 else 
 {
+   Console.WriteLine(day); 
    Console.WriteLine("нет"); 
 }
